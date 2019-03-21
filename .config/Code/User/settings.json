@@ -1,6 +1,6 @@
 {
   //"guides.enabled": false,
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.iconTheme": "material-icon-theme",
   "open-in-browser.default": "chrome",
   "window.zoomLevel": 0,
   "window.titleBarStyle": "custom",
@@ -27,5 +27,8 @@
   //"prettier.disableLanguages": ["js"],
   //"files.autoSave": "onFocusChange",
   "go.formatTool": "gofmt",
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "workbench.colorTheme": "Solarized Dark"
 }
