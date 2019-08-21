@@ -5,7 +5,6 @@
   "window.zoomLevel": 0,
   "window.titleBarStyle": "custom",
   "editor.minimap.enabled": false,
-  "workbench.statusBar.feedback.visible": false,
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
@@ -19,16 +18,32 @@
     "**/**/node_modules/**": true
   },
   "editor.formatOnSave": true,
-  // "[javascript]": {
-  //   "editor.formatOnSave": false
-  // ,
   "eslint.autoFixOnSave": true,
   "eslint.alwaysShowStatus": true,
-  //"prettier.disableLanguages": ["js"],
-  //"files.autoSave": "onFocusChange",
   "go.formatTool": "gofmt",
   "editor.tabSize": 2,
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "workbench.colorTheme": "Solarized Dark"
+  "workbench.colorTheme": "Noctis",
+  "telemetry.enableCrashReporter": false,
+  "vim.useCtrlKeys": false,
+  "workbench.panel.defaultLocation": "right",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "terminal.integrated.fontFamily": "Fira Code Medium",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "turboConsoleLog.logMessagePrefix": "LOG",
+  "extensions.ignoreRecommendations": true,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.associations": {
+    "[Dd]ockerfile*": "dockerfile",
+    "docker-compose*": "yaml"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  }
 }
