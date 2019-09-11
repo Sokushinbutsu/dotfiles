@@ -45,5 +45,8 @@
   },
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
-  }
+  },
+  "latex-workshop.view.pdf.viewer": "tab",
+  "python.jediEnabled": false,
+  "keyboard.dispatch": "keyCode"
 }
