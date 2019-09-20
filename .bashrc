@@ -139,3 +139,8 @@ export PATH=$PATH:/home/brian/.gem/ruby/2.5.0/bin
 
 export PATH=~/.local/bin:$PATH
 
+# adds completion for exercism
+
+    if [ -f ~/.config/exercism/exercism_completion.bash ]; then
+      source ~/.config/exercism/exercism_completion.bash
+    fi
