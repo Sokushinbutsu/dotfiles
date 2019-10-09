@@ -105,12 +105,22 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias config='/usr/bin/git --git-dir=/home/brian/.cfg/ --work-tree=/home/brian'
+alias i3config="vim ~/.config/i3/config"
+# enable aliases to be sudoed
+alias sudo='sudo '
 
 # ls
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias ls='ls --color=auto'
+# list only directories
+alias lsd="ls -lhF ${colorflag} | grep --color=never '^d'"
+
+# cd
+alias dl='cd ~/Downloads'
+alias dev='cd ~/dev'
+
 
 # grep
 alias grep='grep --color=auto'
@@ -120,5 +130,14 @@ alias egrep='egrep --color=auto'
 
 # utilities
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
+# IP addresses
+alias pubip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="sudo ifconfig | grep -Eo 'inet (addr:)?([0-9]*\\.){3}[0-9]*'
+# | grep -Eo '([0-9]*\\.){3}[0-9]*' | grep -v '127.0.0.1'"
+alias ips="sudo ifconfig -a | grep -o 'inet6\\?
+# \\(addr:\\)\\?\\s\\?\\(\\(\\([0-9]\\+\\.\\)\\{3\\}[0-9]\\+\\)\\|[a-fA-F0-9:]\\+\\)'
+# | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
+
 
 
