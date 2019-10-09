@@ -115,7 +115,7 @@ alias la='ls -A'
 alias l='ls -CF'
 alias ls='ls --color=auto'
 # list only directories
-alias lsd="ls -lhF ${colorflag} | grep --color=never '^d'"
+alias lsd='ls -lhF --color=auto'
 
 # cd
 alias dl='cd ~/Downloads'
