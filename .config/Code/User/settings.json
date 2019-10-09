@@ -24,7 +24,7 @@
   "editor.tabSize": 2,
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "workbench.colorTheme": "Noctis",
+  "workbench.colorTheme": "Solarized Dark",
   "telemetry.enableCrashReporter": false,
   "vim.useCtrlKeys": false,
   "workbench.panel.defaultLocation": "right",
