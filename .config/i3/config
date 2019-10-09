@@ -182,3 +182,7 @@ bindsym $mod+r mode "resize"
 bar {
   status_command i3status -c ~/.config/i3status/config
 }
+
+# fix scrolling
+exec --no-startup-id synclient HorizEdgeScroll=1 VertEdgeScroll=1 VertScrollDelta=-111
+
