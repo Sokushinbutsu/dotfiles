@@ -75,6 +75,8 @@ plugins=(
   dotenv
   httpie
   npm
+  zsh-syntax-highlighting
+  zsh-autosuggestions
   )
 
 source $ZSH/oh-my-zsh.sh
@@ -95,6 +97,10 @@ source $ZSH/oh-my-zsh.sh
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
+
+# History
+HISTSIZE=100000
+SAVEHIST=100000
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -121,6 +127,8 @@ alias lsd='ls -lhF --color=auto'
 alias dl='cd ~/Downloads'
 alias dev='cd ~/dev'
 
+# History
+alias hist='history -i'
 
 # grep
 alias grep='grep --color=auto'
