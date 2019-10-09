@@ -50,5 +50,6 @@ export PATH=~/.local/bin:$PATH
 # added by travis gem
 [ -f /home/brian/.travis/travis.sh ] && source /home/brian/.travis/travis.sh
 
-
+# config dir
+export XDG_CONFIG_HOME=~/.config
 
