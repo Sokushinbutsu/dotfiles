@@ -21,6 +21,7 @@ fi
 # set PATH so it includes user's private bin directories
 #PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 export EDITOR=vim
+export BROWSER=/usr/bin/firefox
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$(go env GOPATH)/bin
 
