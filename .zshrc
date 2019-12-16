@@ -115,7 +115,7 @@ alias i3config="vim ~/.config/i3/config"
 alias sudo='sudo '
 
 # ls
-alias ll='ls -alF'
+alias ll='ls -alF -h'
 alias la='ls -A'
 alias l='ls -CF'
 alias ls='ls --color=auto'
