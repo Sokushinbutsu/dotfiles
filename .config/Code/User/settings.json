@@ -23,7 +23,7 @@
   "editor.tabSize": 2,
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "workbench.colorTheme": "Solarized Dark",
+  "workbench.colorTheme": "One Dark Pro",
   "telemetry.enableCrashReporter": false,
   "vim.useCtrlKeys": false,
   "workbench.panel.defaultLocation": "right",
@@ -48,10 +48,12 @@
   "latex-workshop.view.pdf.viewer": "tab",
   "python.jediEnabled": false,
   "keyboard.dispatch": "keyCode",
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": true
-  },
   "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "oneDarkPro.editorTheme": "solarized",
+  "oneDarkPro.vivid": true,
+  "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
