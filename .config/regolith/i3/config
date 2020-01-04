@@ -239,9 +239,7 @@ new_float pixel 1
 for_window [class="(?i)firefox"] border normal 
 
 # Change font for firefox
-#for_window [class="(?i)firefox"] font page:Source Code Pro Medium 12
-
-for_window [class="(?i)firefox"] title_format "<span foreground='red'>%title</span>"
+font pango:Source Code Pro Medium 10
 
 # Gaps (i3-gaps)
 gaps inner 5
@@ -334,6 +332,7 @@ bar {
 # Run programs when i3 starts
 
 # Start the composite manager
+# I've found that this causes flickering.
 # exec --no-startup-id compton -f --config $compton_config
 
 # Launch the shortcut Conky window on first login
