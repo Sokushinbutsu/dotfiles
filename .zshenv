@@ -10,6 +10,7 @@ export GOPATH=$HOME/dev/go
 
 export PATH=~/.local/bin:$PATH
 
+export PATH="/home/brian/anaconda3/bin:$PATH"
 # backblaze restic config. Account key is secret
 
 export B2_ACCOUNT_KEY="0024caf3879574557782b1fef03199484a938c90f6"
