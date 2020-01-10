@@ -3,13 +3,16 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/brian/.oh-my-zsh"
-zmodload zsh/zprof
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="powerlevel9k/powerlevel9k"
 
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(anaconda dir vcs status)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
+POWERLEVEL9K_STATUS_OK=(false)
+autoload -Uz compinit
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
@@ -70,6 +73,12 @@ COMPLETION_WAITING_DOTS="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  web-search
+  vscode
+  npm
+  node
+  python
+  virtualenv
   )
 
 source $ZSH/oh-my-zsh.sh
@@ -105,7 +114,7 @@ SAVEHIST=100000
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias config='/usr/bin/git --git-dir=/home/brian/.cfg/ --work-tree=/home/brian'
-alias i3config="vim ~/.config/i3/config"
+alias i3config="vim ~/.config/regolith/i3/config"
 # enable aliases to be sudoed
 alias sudo='sudo '
 
@@ -268,3 +277,19 @@ openimage() {
 		--image-bg black \
 		--start-at "$file"
 }
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/brian/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/brian/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/brian/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/brian/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
