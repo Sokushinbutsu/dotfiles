@@ -1,5 +1,3 @@
-# Exports
-
 export EDITOR=vim
 export BROWSER=/usr/bin/firefox
 export DEFAULT_USER=brian
@@ -20,7 +18,7 @@ export RESTIC_REPOSITORY="b2:ubuntu-restic-backup"
 export NVM_DIR="$HOME/.nvm"
 export GEM_HOME=~/.ruby
 export PATH=$PATH:/home/brian/.gem/ruby/2.5.0/bin
-
+export PATH="$HOME/.cargo/bin:$PATH"
 # swap capslock and escape
 /usr/bin/setxkbmap -option "caps:swapescape"
 
@@ -32,3 +30,6 @@ export XDG_CONFIG_HOME=~/.config
 
 # flutter
 export PATH="$PATH:/home/brian/.local/share/flutter/bin"
+
+# agilis specific
+export FLASK_APP=/home/brian/dev/agilis/website-react/server/src/agilis
