@@ -17,27 +17,18 @@
     "**/**/node_modules/**": true
   },
   "editor.formatOnSave": true,
-  "eslint.autoFixOnSave": true,
-  "eslint.alwaysShowStatus": true,
   "go.formatTool": "gofmt",
   "editor.tabSize": 2,
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "workbench.colorTheme": "One Dark Pro",
   "telemetry.enableCrashReporter": false,
   "vim.useCtrlKeys": false,
   "workbench.panel.defaultLocation": "right",
-  "editor.fontFamily": "Fira Code",
+  "editor.fontFamily": "Fira Code Retina",
   "editor.fontLigatures": true,
-  "terminal.integrated.fontFamily": "Fira Code Medium",
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  // "terminal.integrated.fontFamily": "Fira Code Retina",
   "turboConsoleLog.logMessagePrefix": "LOG",
   "extensions.ignoreRecommendations": true,
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "files.associations": {
     "[Dd]ockerfile*": "dockerfile",
     "docker-compose*": "yaml"
@@ -48,12 +39,32 @@
   "latex-workshop.view.pdf.viewer": "tab",
   "python.jediEnabled": false,
   "keyboard.dispatch": "keyCode",
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "oneDarkPro.editorTheme": "solarized",
   "oneDarkPro.vivid": true,
-  "[typescript]": {
+  "vs-kubernetes": {
+    "vs-kubernetes.minikube-path": "/home/brian/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
+    "vs-kubernetes.minikube-path.linux": "/home/brian/.vs-kubernetes/tools/minikube/linux-amd64/minikube"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.tslint": true,
+  },
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "cloudcode.gke": {
+    "projectIds": [
+      "agilis-corporate"
+    ]
+  },
+  "editor.fontSize": 15,
+  "python.terminal.activateEnvironment": false,
+  "terminal.integrated.scrollback": 3000,
+  "workbench.colorTheme": "One Dark Pro",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
